@@ -125,7 +125,7 @@ quantity! {
         @kilowatt_per_degree_celsius: prefix!(kilo); "kW/°C", "kilowatt per degree Celsius",
             "kilowatts per degree Celsius";
         /// Derived unit of thermal conductance in derived units. Equivalent to kg · m²/(s³ · K).
-        @watt_per_meter_degree_celsius: prefix!(none); "W/°C", "watt per degree Celsius",
+        @watt_per_degree_celsius: prefix!(none); "W/°C", "watt per degree Celsius",
             "watts per degree Celsius";
         @milliwatt_per_degree_celsius: prefix!(milli); "mW/°C", "milliwatt per degree Celsius",
             "milliwatts per degree Celsius";
@@ -222,7 +222,7 @@ mod tests {
             test::<p::yoctowatt, ti::kelvin, tc::yoctowatt_per_kelvin>();
 
             test::<p::kilowatt, ti::degree_celsius, tc::kilowatt_per_degree_celsius>();
-            test::<p::watt, ti::degree_celsius, tc::watt_per_meter_degree_celsius>();
+            test::<p::watt, ti::degree_celsius, tc::watt_per_degree_celsius>();
             test::<p::milliwatt, ti::degree_celsius, tc::milliwatt_per_degree_celsius>();
 
             fn test<
