@@ -10,7 +10,7 @@
 quantity! {
     /// Thermal conductance (base unit watt per kelvin, kg · m² · s⁻³ · K⁻¹).
     quantity: ThermalConductance; "thermal conductance";
-    /// Dimension of thermal conductance, LM²T⁻³Th⁻¹ (base unit watt per kelvin, kg · m² · s⁻³
+    /// Dimension of thermal conductance, L²MT⁻³Th⁻¹ (base unit watt per kelvin, kg · m² · s⁻³
     /// · K⁻¹).
     dimension: ISQ<
         P2,     // length
@@ -52,7 +52,7 @@ quantity! {
         @decagram_meter_squared_per_second_cubed_kelvin: prefix!(deca) / prefix!(kilo); "dag · m²/(s³ · K)",
             "decagram meter squared per second cubed kelvin",
             "decagrams meter squared per second cubed kelvin";
-        @gram_meter_squared_per_second_cubed_kelvin: prefix!(none) / prefix!(kilo); "g · m/(s³ · K)",
+        @gram_meter_squared_per_second_cubed_kelvin: prefix!(none) / prefix!(kilo); "g · m²/(s³ · K)",
             "gram meter squared per second cubed kelvin", "grams meter squared per second cubed kelvin";
         @decigram_meter_squared_per_second_cubed_kelvin: prefix!(deci) / prefix!(kilo); "dg · m²/(s³ · K)",
             "decigram meter squared per second cubed kelvin",
