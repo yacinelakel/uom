@@ -14,8 +14,8 @@ quantity! {
         Z0,     // amount of substance
         Z0>;    // luminous intensity
     units {
-        @joule_per_square_meter_kelvin: prefix!(none); "J/(m² · K)", "joule per square meter kelvin",
-            "joules per square meter kelvin";
+        @joule_per_square_meter_kelvin: prefix!(none); "J/(m² · K)",
+            "joule per square meter kelvin", "joules per square meter kelvin";
     }
 }
 
@@ -39,11 +39,9 @@ mod tests {
         fn check_heat_capacity_area_units() {
             test::<hc::joule_per_kelvin, a::square_meter, ahc::joule_per_square_meter_kelvin>();
 
-            fn test<HC: hc::Conversion<V>, A: a::Conversion<V>, AHC: ahc::Conversion<V>>()
-            {
+            fn test<HC: hc::Conversion<V>, A: a::Conversion<V>, AHC: ahc::Conversion<V>>() {
                 Test::assert_approx_eq(&ArealHeatCapacity::new::<AHC>(V::one()),
-                    &(HeatCapacity::new::<HC>(V::one()) / (Area::new::<A>(V::one())))
-                );
+                    &(HeatCapacity::new::<HC>(V::one()) / (Area::new::<A>(V::one()))));
             }
         }
     }
